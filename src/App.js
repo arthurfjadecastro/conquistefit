@@ -15,12 +15,12 @@ const App = () => {
         <div>
             <BrowserRouter>
                 <Switch>
-                    <Route path="/index" render={(props) => <Home {...props} />} />
+                    <Route path="/home" render={(props) => <Home {...props} />} />
                     {/*<Route*/}
                     {/*    path="/landing-page"*/}
                     {/*    render={(props) => <LandingPage {...props} />}*/}
                     {/*/>*/}
-                    <Redirect to="/index" />
+                    <Redirect to="/home" />
                 </Switch>
             </BrowserRouter>,
         </div>

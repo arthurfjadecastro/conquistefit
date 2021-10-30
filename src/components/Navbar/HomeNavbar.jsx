@@ -110,7 +110,6 @@ function HomeNavbar() {
                         <NavItem>
                             <NavLink
                                 data-placement="bottom"
-                                href="https://www.github.com/CreativeTimOfficial/conquiste-fit-react?ref=creativetim"
                                 target="_blank"
                                 title="Star on GitHub"
                             >
@@ -120,10 +119,9 @@ function HomeNavbar() {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                href="https://demos.creative-tim.com/conquiste-fit-react/#/documentation?ref=pkr-index-navbar"
                                 target="_blank"
                             >
-                                <i className="nc-icon nc-book-bookmark" /> Documentation
+                                <i className="nc-icon nc-book-bookmark" /> REGRAS
                             </NavLink>
                         </NavItem>
                         <NavItem>
@@ -134,7 +132,7 @@ function HomeNavbar() {
                                 target="_blank"
                                 disabled
                             >
-                                Upgrade to Pro
+                                RANKING SR2637
                             </Button>
                         </NavItem>
                     </Nav>

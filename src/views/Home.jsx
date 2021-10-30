@@ -15,7 +15,9 @@ const Home = () => {
         };
     });
     return (
+
         <div>
+
             <HomeNavbar/>
             <HomeHeader/>
 

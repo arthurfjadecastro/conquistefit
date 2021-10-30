@@ -1,0 +1,48 @@
+@import 'conquiste-fit/variables';
+@import 'conquiste-fit/mixins';
+
+// Plugins CSS
+@import "conquiste-fit/plugins/plugin-bootstrap-switch";
+@import "conquiste-fit/plugins/plugin-nouislider";
+@import "conquiste-fit/plugins/plugin-datepicker";
+
+// Core CSS
+@import "conquiste-fit/buttons";
+@import "conquiste-fit/inputs";
+@import "conquiste-fit/checkbox-radio";
+@import "conquiste-fit/progress-bars";
+@import "conquiste-fit/badges";
+@import "conquiste-fit/pagination";
+@import "conquiste-fit/typography";
+@import "conquiste-fit/misc";
+@import "conquiste-fit/labels";
+
+// components
+//@import "conquiste-fit/nucleo-icons";
+@import "conquiste-fit/social-buttons";
+@import "conquiste-fit/tabs-navs";
+@import "conquiste-fit/navbars";
+@import "conquiste-fit/dropdown";
+@import "conquiste-fit/alerts";
+@import "conquiste-fit/images";
+@import "conquiste-fit/tooltips-and-popovers";
+@import "conquiste-fit/modal";
+@import "conquiste-fit/icons";
+@import "conquiste-fit/carousel";
+@import "conquiste-fit/footers";
+
+// Cards
+@import "conquiste-fit/cards";
+@import "conquiste-fit/cards/card-plain";
+@import "conquiste-fit/cards/card-register";
+@import "conquiste-fit/cards/card-profile";
+
+// example pages and sections
+@import "conquiste-fit/examples";
+@import "conquiste-fit/sections";
+
+
+@import "conquiste-fit/responsive";
+
+// React Differences
+@import "react/react-differences.scss";

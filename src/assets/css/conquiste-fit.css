@@ -3054,7 +3054,7 @@ License - nucleoapp.com/license/
   .navbar .navbar-collapse.show .navbar-nav .nav-item {
     padding-right: 10px; }
   .navbar .navbar-collapse:after {
-    background-color: #FFFCF5; }
+    background: transparent }
   .navbar #navbarSupportedContent .nav-item {
     position: relative; }
   .navbar .notification-bubble {
@@ -5343,6 +5343,7 @@ License - nucleoapp.com/license/
       content: "";
       z-index: 1; }
   .nav-open .navbar-collapse {
+    /*background: rgba(0,0,0,0.35);*/
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
     -o-transform: translateX(0px);
@@ -6376,7 +6377,9 @@ td.rdtYear:hover {
 
 @media screen and (max-width: 991px) {
   .navbar-collapse {
-    height: 100% !important; } }
+    height: 100% !important;
+    /*background: rgba(0,0,0,0.35);*/
+  } }
 
 @media screen and (max-width: 320px) {
   .index .presentation-subtitle {

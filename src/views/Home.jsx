@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Helmet } from "react-helmet";
 //Reacstrap components
 
 import { HomeNavbar } from "../components/Navbar"
@@ -14,15 +14,30 @@ const Home = () => {
             document.body.classList.remove("index");
         };
     });
+
     return (
 
-        <div>
+       <>
+         <Helmet>
+           <style>{`body { display: flex !important }`}</style>
+         </Helmet>
+         <Helmet>
+           <style>{`body { flex-direction: column !important }`}</style>
+         </Helmet>
+         <Helmet>
+           <style>{`body { overflow: hidden !important }`}</style>
+         </Helmet>
+         <Helmet>
+           <style>{`$html { display: flex !important }`}</style>
+         </Helmet>
+         <HomeNavbar/>
+         <HomeHeader/>
+       </>
 
-            <HomeNavbar/>
-            <HomeHeader/>
 
-        </div>
     );
 };
 
 export default Home;
+
+

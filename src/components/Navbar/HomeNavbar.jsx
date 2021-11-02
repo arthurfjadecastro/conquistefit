@@ -13,10 +13,26 @@ import {
     Nav,
     Container,
 } from "reactstrap";
+import { useHistory } from "react-router-dom";
+import { Ranking } from "../../views";
 
 function HomeNavbar() {
     const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
     const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+    const history = useHistory()
+
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    console.log(history)
+    const handleRedirectsAnotherScreen = () => {
+
+    };
 
     const toggleNavbarCollapse = () => {
         setNavbarCollapse(!navbarCollapse);
@@ -45,6 +61,7 @@ function HomeNavbar() {
         };
     });
     return (
+      <>
         <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
             <Container>
                 <div className="navbar-translate">
@@ -69,54 +86,12 @@ function HomeNavbar() {
                     </button>
                 </div>
                 <Collapse
+                  style={{background: "transparent"}}
                     className="justify-content-end"
                     navbar
                     isOpen={navbarCollapse}
                 >
-                    <Nav navbar>
-                        <NavItem>
-                            <NavLink
-                                data-placement="bottom"
-                                href="https://twitter.com/CreativeTim?ref=creativetim"
-                                target="_blank"
-                                title="Follow us on Twitter"
-                            >
-                                <i className="fa fa-twitter" />
-                                <p className="d-lg-none">Twitter</p>
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink
-                                data-placement="bottom"
-                                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                                target="_blank"
-                                title="Like us on Facebook"
-                            >
-                                <i className="fa fa-facebook-square" />
-                                <p className="d-lg-none">Facebook</p>
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink
-                                data-placement="bottom"
-                                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                                target="_blank"
-                                title="Follow us on Instagram"
-                            >
-                                <i className="fa fa-instagram" />
-                                <p className="d-lg-none">Instagram</p>
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink
-                                data-placement="bottom"
-                                target="_blank"
-                                title="Star on GitHub"
-                            >
-                                <i className="fa fa-github" />
-                                <p className="d-lg-none">GitHub</p>
-                            </NavLink>
-                        </NavItem>
+                    <Nav    style={{background: "transparent"}} navbar>
                         <NavItem>
                             <NavLink
                                 target="_blank"
@@ -126,11 +101,11 @@ function HomeNavbar() {
                         </NavItem>
                         <NavItem>
                             <Button
+                                onClick={handleClickOpen}
                                 className="btn-round"
-                                color="danger"
-                                href="#pablo"
-                                target="_blank"
-                                disabled
+                                color="center"
+
+
                             >
                                 RANKING SR2637
                             </Button>
@@ -139,6 +114,8 @@ function HomeNavbar() {
                 </Collapse>
             </Container>
         </Navbar>
+        <Ranking open={open} handleClose={handleClose}/>
+    </>
     );
 }
 

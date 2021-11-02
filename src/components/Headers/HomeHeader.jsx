@@ -3,33 +3,37 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
-
+import {
+  Button,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+  Box,
+} from "@material-ui/core";
 // core components
 
+
+
 function HomeHeader() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
     return (
         <>
-            {/*<img alt={"ae"} src="/img/antoine-barres.jpg"/>*/}
             <div
                 className="page-header section-dark"
                 style={{
                     backgroundImage:
                         "url(/img/background2.jpg",
                     backgroundBlendMode: "lighten",
-                    backgroundPosition: "right"
+                    backgroundPosition: isMobile ? "center" : "right"
                 }}
             >
                 <div className="filter" />
-                <div className="content-center">
+                <div className="content-center" style={{width: "100%"}}>
                     <Container>
-                        <div className="title-brand">
+                        <div className="title-brand" style={{fontSize: isMobile && 5}}>
                             <h1 className="presentation-title">CONQUISTE FIT</h1>
-                            <div className="fog-low">
-                                {/*<img alt="..." src={"/img/fog-low.png"} />*/}
-                            </div>
-                            <div className="fog-low right">
-                                {/*<img alt="..." src={"/img/fog-low.png"} />*/}
-                            </div>
                         </div>
                         <h2 className="presentation-subtitle text-center">
                             Faça acontecer, evolua sua saúde e seja melhor do que cabo de vassoura
@@ -57,3 +61,7 @@ function HomeHeader() {
 }
 
 export default HomeHeader;
+
+
+
+

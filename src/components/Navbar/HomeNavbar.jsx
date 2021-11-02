@@ -71,7 +71,7 @@ function HomeNavbar() {
                         target="_blank"
                         title="Coded by Creative Tim"
                     >
-                      Conquiste Fit
+                      CONQUISTE FIT
                     </NavbarBrand>
                     <button
                         aria-expanded={navbarCollapse}
@@ -107,7 +107,7 @@ function HomeNavbar() {
 
 
                             >
-                                RANKING SR2637
+                                RANKING
                             </Button>
                         </NavItem>
                     </Nav>

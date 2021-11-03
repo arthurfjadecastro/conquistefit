@@ -117,7 +117,7 @@ export default function Ranking({open, handleClose}) {
         style: {
           maxWidth: "md",
         },
-        variant: "outlined"
+        variant: "elevation"
       }}  open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
           <Toolbar>
@@ -134,9 +134,9 @@ export default function Ranking({open, handleClose}) {
             return (
               <>
                 <ListItem >
-                  <Grid container justifyContent={"space-between"} xs={12} lg={12} xl={12} md={12} sm={12}>
+                  <Grid wrap={"nowrap"} container nowrap justifyContent={"space-between"} xs={12} lg={12} xl={12} md={12} sm={12}>
                     <Grid item>
-                      <Grid container spacing={2} nowrap>
+                      <Grid container spacing={2} wrap={"nowrap"}>
                         <Grid item>
                           <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(255,109,0,.60)"}}>
                             <img style={{width: 60,     boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>

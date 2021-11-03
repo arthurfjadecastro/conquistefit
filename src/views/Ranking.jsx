@@ -13,6 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 import { Avatar, Grid } from "@material-ui/core";
+import PeopleAltOutlined from '@material-ui/icons/PeopleAltOutlined';
+
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -25,6 +27,23 @@ const useStyles = makeStyles((theme) => ({
   },
   dialog: {
     width: 1200
+  },
+  gridPosition: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+    width: 60,
+  },
+  text: {
+    fontSize: 12,
+    fontFamily: "Arial Black",
+    color: "#686599",
+    fontWeight: 400,
+    textDecoration: "overline solid rgb(68, 68, 68)",
+    fontStyle: "normal",
+    fontVariant: "small-caps",
+    textTransform: "uppercase"
   }
 }));
 
@@ -36,39 +55,39 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const Persons =  [
   {
-    name: "Marciano Freitas",
+    name: "Marciano",
     src: "/img/MARCIANO.svg",
-    pts: 24
+    pts: 41
   },
   {
     name: "Beth",
     src: "/img/BETH.svg",
-    pts: 33
+    pts: 25
   },
   {
-    name: "Lana Renk",
+    name: "Lana",
     src: "/img/LANA.svg",
-    pts: 20
+    pts: 55
   },
   {
-    name: "Ramon Cachoeira",
+    name: "Ramon",
     src: "/img/RAMON.svg",
     pts: 19
   },
   {
-    name: "Joao Victor",
+    name: "Joao",
     src: "/img/JOAO.svg",
     pts: 16
   },
   {
-    name: "Ana Carolina",
+    name: "Carol",
     src: "/img/CAROL.svg",
     pts: 14
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
-    pts: 16
+    pts: 39
   },
   {
     name: "Arthur",
@@ -88,7 +107,7 @@ const Persons =  [
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
-    pts: 11
+    pts: 37
   },
 ]
 
@@ -103,7 +122,7 @@ Persons.sort(function (a, b) {
   return 0;
 });
 
-console.log(Persons)
+
 
 
 
@@ -143,7 +162,7 @@ export default function Ranking({open, handleClose}) {
                           </Avatar>
                         </Grid>
                         <Grid item>
-                          <ListItemText primaryTypographyProps={{noWrap: true}} primary={name} secondary={pts + "pts"} />
+                          <ListItemText primaryTypographyProps={{noWrap: true, style: {fontFamily: "fantasy"}}} primary={name} secondary={pts + "pts"} />
                         </Grid>
                       </Grid>
                     </Grid>
@@ -160,6 +179,15 @@ export default function Ranking({open, handleClose}) {
                     {index === 2 &&
                     <Grid item>
                       <img style={{width: 60}} src={"/img/3colocado.svg"}/>
+                    </Grid>
+                    }
+                    {index >= 3 &&
+                    <Grid item className={classes.gridPosition}>
+                      <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
+                        {index+1}
+                      </Typography>
+
+                      {/*<PeopleAltOutlined style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.35)"}}/>*/}
                     </Grid>
                     }
                   </Grid>

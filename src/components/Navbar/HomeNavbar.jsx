@@ -69,7 +69,6 @@ function HomeNavbar() {
                         data-placement="bottom"
                         href="/index"
                         target="_blank"
-                        title="Coded by Creative Tim"
                     >
                       CONQUISTE FIT
                     </NavbarBrand>

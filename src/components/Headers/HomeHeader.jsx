@@ -36,7 +36,7 @@ function HomeHeader() {
                             <h1 className="presentation-title">CONQUISTE FIT</h1>
                         </div>
                         <h2 className="presentation-subtitle text-center">
-                            Faça acontecer, evolua sua saúde e seja melhor do que cabo de vassoura
+                          Quando corpo e mente trabalham juntos tudo se torna possível.
                         </h2>
                     </Container>
                 </div>

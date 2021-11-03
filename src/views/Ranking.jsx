@@ -32,21 +32,23 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+
+
 const Persons =  [
-  {
-    name: "Lana Renk",
-    src: "/img/LANA.svg",
-    pts: 25
-  },
   {
     name: "Marciano Freitas",
     src: "/img/MARCIANO.svg",
-    pts: 22
+    pts: 24
   },
   {
     name: "Beth",
     src: "/img/BETH.svg",
-    pts: 21
+    pts: 33
+  },
+  {
+    name: "Lana Renk",
+    src: "/img/LANA.svg",
+    pts: 20
   },
   {
     name: "Ramon Cachoeira",
@@ -89,6 +91,21 @@ const Persons =  [
     pts: 11
   },
 ]
+
+Persons.sort(function (a, b) {
+  if (a.pts < b.pts) {
+    return 1;
+  }
+  if (a.pts > b.pts) {
+    return -1;
+  }
+  // a must be equal to b
+  return 0;
+});
+
+console.log(Persons)
+
+
 
 
 

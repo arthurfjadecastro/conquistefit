@@ -162,7 +162,7 @@ export default function Ranking({open, handleClose}) {
                           </Avatar>
                         </Grid>
                         <Grid item>
-                          <ListItemText primaryTypographyProps={{noWrap: true, style: {fontFamily: "fantasy"}}} primary={name} secondary={pts + "pts"} />
+                          <ListItemText secondaryTypographyProps={{style: index === 0 || index === 1 || index === 2 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
                         </Grid>
                       </Grid>
                     </Grid>

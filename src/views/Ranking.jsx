@@ -139,11 +139,11 @@ export default function Ranking({open, handleClose}) {
                       <Grid container spacing={2} wrap={"nowrap"}>
                         <Grid item>
                           <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(255,109,0,.60)"}}>
-                            <img style={{width: 60,     boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>
+                            <img style={{width: 60, boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>
                           </Avatar>
                         </Grid>
                         <Grid item>
-                          <ListItemText primary={name} secondary={pts + "pts"} />
+                          <ListItemText primaryTypographyProps={{noWrap: true}} primary={name} secondary={pts + "pts"} />
                         </Grid>
                       </Grid>
                     </Grid>

@@ -136,7 +136,7 @@ export default function Ranking({open, handleClose}) {
                 <ListItem >
                   <Grid container justifyContent={"space-between"} xs={12} lg={12} xl={12} md={12} sm={12}>
                     <Grid item>
-                      <Grid container spacing={2}>
+                      <Grid container spacing={2} nowrap>
                         <Grid item>
                           <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(255,109,0,.60)"}}>
                             <img style={{width: 60,     boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>

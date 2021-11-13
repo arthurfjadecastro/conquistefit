@@ -15,6 +15,7 @@ import {
 } from "reactstrap";
 import { useHistory } from "react-router-dom";
 import { Ranking } from "../../views";
+import Regulation from "../../views/Regulation";
 
 function HomeNavbar() {
     const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -22,14 +23,23 @@ function HomeNavbar() {
     const history = useHistory()
 
     const [open, setOpen] = React.useState(false);
+    const [openRegulation, setOpenRegulation] = React.useState(false);
+
+    const handleCloseRegulation = () => {
+        setOpenRegulation(false);
+    };
+
     const handleClose = () => {
         setOpen(false);
     };
     const handleClickOpen = () => {
         setOpen(true);
     };
+    const handleClickRegulation = () => {
+        setOpenRegulation(true);
+    };
 
-    console.log(history)
+    // console.log(history)
     const handleRedirectsAnotherScreen = () => {
 
     };
@@ -92,11 +102,15 @@ function HomeNavbar() {
                 >
                     <Nav    style={{background: "transparent"}} navbar>
                         <NavItem>
-                            <NavLink
-                                target="_blank"
+                            <Button
+                              onClick={handleClickRegulation}
+                              className="btn-round"
+                              color="center"
+
+
                             >
-                                <i className="nc-icon nc-book-bookmark" /> REGRAS
-                            </NavLink>
+                                REGULAMENTO
+                            </Button>
                         </NavItem>
                         <NavItem>
                             <Button
@@ -114,6 +128,7 @@ function HomeNavbar() {
             </Container>
         </Navbar>
         <Ranking open={open} handleClose={handleClose}/>
+          <Regulation open={openRegulation} handleClose={handleCloseRegulation}/>
     </>
     );
 }

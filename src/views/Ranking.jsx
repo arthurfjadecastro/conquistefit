@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 import { Avatar, Grid } from "@material-ui/core";
-import PeopleAltOutlined from '@material-ui/icons/PeopleAltOutlined';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
   title: {
     marginLeft: theme.spacing(2),
     flex: 1,
+  },
+  title2: {
+    marginLeft: theme.spacing(2),
+    flex: 1,
+    justifyContent:"flex-end",
+    display: "flex"
   },
   dialog: {
     width: 1200
@@ -57,57 +63,97 @@ const Persons =  [
   {
     name: "Marciano",
     src: "/img/MARCIANO.svg",
-    pts: 41
+    pts: 0
   },
   {
     name: "Beth",
     src: "/img/BETH.svg",
-    pts: 25
+    pts: 0
   },
   {
     name: "Lana",
     src: "/img/LANA.svg",
-    pts: 55
+    pts: 0
   },
   {
     name: "Ramon",
     src: "/img/RAMON.svg",
-    pts: 19
+    pts: 0
   },
   {
-    name: "Joao",
+    name: "João",
     src: "/img/JOAO.svg",
-    pts: 16
+    pts: 0
   },
   {
     name: "Carol",
     src: "/img/CAROL.svg",
-    pts: 14
+    pts: 0
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
-    pts: 39
+    pts: 0
   },
   {
     name: "Arthur",
     src: "/img/ARTHUR.svg",
-    pts: 14
+    pts: 0
   },
   {
     name: "Walmar",
     src: "/img/WALMAR.svg",
-    pts: 14
+    pts: 0
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
-    pts: 12
+    pts: 0
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
-    pts: 37
+    pts: 0
+  },
+  {
+    name: "Kerson",
+    src: "",
+    pts: 0
+  },
+  {
+    name: "Andréia",
+    src: "",
+    pts: 0
+  },
+  {
+    name: "Luciano",
+    src: "",
+    pts: 0
+  },
+  {
+    name: "Eduardo",
+    src: "",
+    pts: 0
+  },
+  {
+    name: "Juliana",
+    src: "",
+    pts: 0
+  },
+  {
+    name: "Gilberto",
+    src: "",
+    pts: 0
+  },
+  {
+    name: "Elvis",
+    src: "",
+    pts: 0
+  },
+  {
+    name: "Bruno",
+    src: "",
+    pts: 0
   },
 ]
 
@@ -129,8 +175,16 @@ Persons.sort(function (a, b) {
 
 
 export default function Ranking({open, handleClose}) {
+
+
+  const finish = new Date("01/14/2022");
+  const timeDiff = Math.abs(finish.getTime() - Date.now());
+
+
+  const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
   const classes = useStyles();
   return (
+
     <div>
       <Dialog  fullWidth PaperProps={{
         style: {
@@ -146,6 +200,10 @@ export default function Ranking({open, handleClose}) {
             <Typography variant="h6" className={classes.title}>
               SR2637 - BRASÍLIA SUL
             </Typography>
+            <Typography variant="body2" className={classes.title2}>
+               Dias Restantes:    <b> {diffDays}</b>
+            </Typography>
+
           </Toolbar>
         </AppBar>
         <List>
@@ -184,7 +242,7 @@ export default function Ranking({open, handleClose}) {
                     {index >= 3 &&
                     <Grid item className={classes.gridPosition}>
                       <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
-                        {index+1}
+                        {index+1 + "º"}
                       </Typography>
 
                       {/*<PeopleAltOutlined style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.35)"}}/>*/}

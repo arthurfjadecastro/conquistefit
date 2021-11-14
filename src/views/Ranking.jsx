@@ -118,17 +118,17 @@ const Persons =  [
   },
   {
     name: "Kerson",
-    src: "/img/default-avatar.png",
+    src: "/img/KERSON.svg",
     pts: 0
   },
   {
     name: "Andréia",
-    src: "/img/default-avatar.png",
+    src: "/img/ANDREA.svg",
     pts: 0
   },
   {
     name: "Luciano",
-    src: "/img/default-avatar.png",
+    src: "/img/LUCIANO.SVG",
     pts: 0
   },
   {
@@ -148,12 +148,12 @@ const Persons =  [
   },
   {
     name: "Elvis",
-    src: "/img/default-avatar.png",
+    src: "/img/ELVIS.svg",
     pts: 0
   },
   {
     name: "Bruno",
-    src: "/img/default-avatar.png",
+    src: "/img/BRUNO.svg",
     pts: 0
   },
 ]
@@ -231,8 +231,8 @@ Persons.sort(function (a, b) {
                     <Grid item>
                       <Grid container spacing={2} wrap={"nowrap"}>
                         <Grid item>
-                          <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(255,109,0,.60)"}}>
-                            <img style={{width: 60, boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>
+                          <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(50,90,173,.55)"}}>
+                            <img style={{width: 60, height: 52, boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>
                           </Avatar>
                         </Grid>
                         <Grid item>

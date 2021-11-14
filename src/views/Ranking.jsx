@@ -1,6 +1,5 @@
-import React from 'react';
+import React,{ useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItem from '@material-ui/core/ListItem';
@@ -56,6 +55,8 @@ const useStyles = makeStyles((theme) => ({
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
+
+export default function Ranking({open, handleClose}) {
 
 
 
@@ -170,11 +171,25 @@ Persons.sort(function (a, b) {
 
 
 
+  // const [initialState, setInitialState] = useState([])
 
 
 
-
-export default function Ranking({open, handleClose}) {
+  //
+  // useEffect(() => {
+  //     fetch("/persons").then(res => {
+  //         if (res.ok) {
+  //             return res.json()
+  //         }
+  //     }).then(jsonResponse => setInitialState(jsonResponse))
+  // }, [])
+  //
+  //
+  // initialState.forEach(e => {
+  //     delete e.id
+  //     delete e.createdAt
+  //     delete e.updatedAt
+  // })
 
 
   const finish = new Date("01/14/2022");
@@ -182,6 +197,7 @@ export default function Ranking({open, handleClose}) {
 
 
   const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
   const classes = useStyles();
   return (
 
@@ -244,8 +260,6 @@ export default function Ranking({open, handleClose}) {
                       <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
                         {index+1 + "º"}
                       </Typography>
-
-                      {/*<PeopleAltOutlined style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.35)"}}/>*/}
                     </Grid>
                     }
                   </Grid>

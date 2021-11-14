@@ -117,42 +117,42 @@ const Persons =  [
   },
   {
     name: "Kerson",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
   {
     name: "Andréia",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
   {
     name: "Luciano",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
   {
     name: "Eduardo",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
   {
     name: "Juliana",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
   {
     name: "Gilberto",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
   {
     name: "Elvis",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
   {
     name: "Bruno",
-    src: "",
+    src: "/img/default-avatar.png",
     pts: 0
   },
 ]

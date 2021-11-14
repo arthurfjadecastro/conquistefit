@@ -51,7 +51,7 @@ const Regulation = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const classes = useStyles();
   return (
-    <div>
+    <div style={{background: "radial-gradient(rgb(0 0 0), rgba(0, 157, 217, 0.55))"}}>
         {!isMobile ?  <div>
           <PDFReader showAllPage url={"/img/SR2637.pdf"} />
         </div> : <div style={{height:"100vh"}}><MobilePDFReader scale={0.8} showAllPage url={"/img/SR2637.pdf"} /> </div> }

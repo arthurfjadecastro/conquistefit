@@ -128,7 +128,7 @@ const Persons =  [
   },
   {
     name: "Luciano",
-    src: "/img/LUCIANO.SVG",
+    src: "/img/LUCIANO.svg",
     pts: 0
   },
   {

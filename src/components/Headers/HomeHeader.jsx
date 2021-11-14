@@ -46,7 +46,7 @@ function HomeHeader() {
                         backgroundImage: "url(/img/clouds.png)"
                     }}
                 />
-                <h6 className="category category-absolute">
+                <h6 style={{display: "flex", justifyContent:"center"}} className="category category-absolute">
                     Designed and coded by{" "}
                     <a
                         href="http://arthurfjadecastro.com/"

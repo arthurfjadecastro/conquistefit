@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -57,124 +57,26 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-
-
-const Persons =  [
-  {
-    name: "Marciano",
-    src: "/img/MARCIANO.svg",
-    pts: 0
-  },
-  {
-    name: "Beth",
-    src: "/img/BETH.svg",
-    pts: 0
-  },
-  {
-    name: "Lana",
-    src: "/img/LANA.svg",
-    pts: 0
-  },
-  {
-    name: "Ramon",
-    src: "/img/RAMON.svg",
-    pts: 0
-  },
-  {
-    name: "João",
-    src: "/img/JOAO.svg",
-    pts: 0
-  },
-  {
-    name: "Carol",
-    src: "/img/CAROL.svg",
-    pts: 0
-  },
-  {
-    name: "Dayana",
-    src: "/img/DAYANA.svg",
-    pts: 0
-  },
-  {
-    name: "Arthur",
-    src: "/img/ARTHUR.svg",
-    pts: 0
-  },
-  {
-    name: "Walmar",
-    src: "/img/WALMAR.svg",
-    pts: 0
-  },
-  {
-    name: "Rafaela",
-    src: "/img/RAFAELA.svg",
-    pts: 0
-  },
-  {
-    name: "Fernanda",
-    src: "/img/FERNANDA.svg",
-    pts: 0
-  },
-  {
-    name: "Kerson",
-    src: "",
-    pts: 0
-  },
-  {
-    name: "Andréia",
-    src: "",
-    pts: 0
-  },
-  {
-    name: "Luciano",
-    src: "",
-    pts: 0
-  },
-  {
-    name: "Eduardo",
-    src: "",
-    pts: 0
-  },
-  {
-    name: "Juliana",
-    src: "",
-    pts: 0
-  },
-  {
-    name: "Gilberto",
-    src: "",
-    pts: 0
-  },
-  {
-    name: "Elvis",
-    src: "",
-    pts: 0
-  },
-  {
-    name: "Bruno",
-    src: "",
-    pts: 0
-  },
-]
-
-Persons.sort(function (a, b) {
-  if (a.pts < b.pts) {
-    return 1;
-  }
-  if (a.pts > b.pts) {
-    return -1;
-  }
-  // a must be equal to b
-  return 0;
-});
-
-
-
-
-
-
-
 export default function Ranking({open, handleClose}) {
+
+  const [initialState, setInitialState] = useState([])
+
+
+
+  useEffect(() => {
+      fetch("/persons").then(res => {
+          if (res.ok) {
+              return res.json()
+          }
+      }).then(jsonResponse => setInitialState(jsonResponse))
+  }, [])
+
+
+  initialState.forEach(e => {
+      delete e.id
+      delete e.createdAt
+      delete e.updatedAt
+  })
 
 
   const finish = new Date("01/14/2022");
@@ -182,6 +84,7 @@ export default function Ranking({open, handleClose}) {
 
 
   const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
   const classes = useStyles();
   return (
 
@@ -207,7 +110,7 @@ export default function Ranking({open, handleClose}) {
           </Toolbar>
         </AppBar>
         <List>
-          {Persons.map(({ name, src, pts }, index) => {
+          {initialState.map(({ name, src, points }, index) => {
             return (
               <>
                 <ListItem >
@@ -220,7 +123,7 @@ export default function Ranking({open, handleClose}) {
                           </Avatar>
                         </Grid>
                         <Grid item>
-                          <ListItemText secondaryTypographyProps={{style: index === 0 || index === 1 || index === 2 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
+                          <ListItemText secondaryTypographyProps={{style: index === 0 || index === 1 || index === 2 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={points + "pts"} />
                         </Grid>
                       </Grid>
                     </Grid>

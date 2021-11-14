@@ -77,8 +77,7 @@ function HomeNavbar() {
                 <div className="navbar-translate">
                     <NavbarBrand
                         data-placement="bottom"
-                        href="/index"
-                        target="_blank"
+                        href="/"
                     >
                       CONQUISTE FIT
                     </NavbarBrand>
@@ -103,7 +102,7 @@ function HomeNavbar() {
                     <Nav    style={{background: "transparent"}} navbar>
                         <NavItem>
                             <Button
-                              onClick={handleClickRegulation}
+                              onClick={() => history.push("/regulation")}
                               className="btn-round"
                               color="center"
 
@@ -128,7 +127,6 @@ function HomeNavbar() {
             </Container>
         </Navbar>
         <Ranking open={open} handleClose={handleClose}/>
-          <Regulation open={openRegulation} handleClose={handleCloseRegulation}/>
     </>
     );
 }

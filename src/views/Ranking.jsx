@@ -177,11 +177,6 @@ const Persons =  [
     pts: 0
   },
   {
-    name: "Eduardo",
-    src: "/img/default-avatar.png",
-    pts: 0
-  },
-  {
     name: "Jorge",
     src: "/img/default-avatar.png",
     pts: 0

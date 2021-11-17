@@ -64,127 +64,153 @@ const Persons =  [
   {
     name: "Marciano",
     src: "/img/MARCIANO.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Beth",
     src: "/img/BETH.svg",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Lana",
     src: "/img/LANA.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Ramon",
     src: "/img/RAMON.svg",
-    pts: 1
+    pts: 1,
+    position: null
+
   },
   {
     name: "João",
     src: "/img/JOAO.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Carol",
     src: "/img/CAROL.svg",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Arthur",
     src: "/img/ARTHUR.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Walmar",
     src: "/img/WALMAR.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Kerson",
     src: "/img/KERSON.svg",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Andréia",
     src: "/img/ANDREA.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Luciano",
     src: "/img/LUCIANO.svg",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Eduardo",
     src: "/img/default-avatar.png",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Juliana",
     src: "/img/default-avatar.png",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Gilberto",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Elvis",
     src: "/img/ELVIS.svg",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Bruno",
     src: "/img/BRUNO.svg",
-    pts: 1
+    pts: 1,
+    position: null
   },
   {
     name: "Marcelo",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Sandro",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Tassio",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Guilherme",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Eduardo",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 0,
+    position: null
   },
   {
     name: "Jorge",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 0,
+    position: null
   },
 ]
 
@@ -198,6 +224,20 @@ Persons.sort(function (a, b) {
   // a must be equal to b
   return 0;
 });
+
+const totalPlayers = 25
+
+  Persons[0].position = 1
+
+
+  Persons.map(({ name, src, pts, position }, index) => {
+        if(Persons[0].pts === pts) {
+          Persons[index].position = 1
+        }else{
+
+        }
+  })
+
 
 
 
@@ -253,7 +293,7 @@ Persons.sort(function (a, b) {
           </Toolbar>
         </AppBar>
         <List>
-          {Persons.map(({ name, src, pts }, index) => {
+          {Persons.map(({ name, src, pts, position }, index) => {
             return (
               <>
                 <ListItem >
@@ -270,28 +310,28 @@ Persons.sort(function (a, b) {
                         </Grid>
                       </Grid>
                     </Grid>
-                    {index === 0 &&
+                    {position === 1 &&
                       <Grid item>
                         <img style={{width: 60}} src={"/img/1colocado.svg"}/>
                       </Grid>
                     }
-                    {index === 1 &&
-                    <Grid item>
-                      <img style={{width: 60}} src={"/img/2colocado.svg"}/>
-                    </Grid>
-                    }
-                    {index === 2 &&
-                    <Grid item>
-                      <img style={{width: 60}} src={"/img/3colocado.svg"}/>
-                    </Grid>
-                    }
-                    {index >= 3 &&
-                    <Grid item className={classes.gridPosition}>
-                      <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
-                        {index+1 + "º"}
-                      </Typography>
-                    </Grid>
-                    }
+                    {/*{index === 1 &&*/}
+                    {/*<Grid item>*/}
+                    {/*  <img style={{width: 60}} src={"/img/2colocado.svg"}/>*/}
+                    {/*</Grid>*/}
+                    {/*}*/}
+                    {/*{index === 2 &&*/}
+                    {/*<Grid item>*/}
+                    {/*  <img style={{width: 60}} src={"/img/3colocado.svg"}/>*/}
+                    {/*</Grid>*/}
+                    {/*}*/}
+                    {/*{index >= 3 &&*/}
+                    {/*<Grid item className={classes.gridPosition}>*/}
+                    {/*  <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >*/}
+                    {/*    {index+1 + "º"}*/}
+                    {/*  </Typography>*/}
+                    {/*</Grid>*/}
+                    {/*}*/}
                   </Grid>
                 </ListItem>
                 <Divider />

@@ -238,6 +238,12 @@ const totalPlayers = 25
         }
   })
 
+  Persons.map(({ name, src, pts, position }, index) => {
+    var filtrado = Persons.filter(function(obj) { return obj.position == 1; });
+    console.log(filtrado)
+  })
+
+
 
 
 

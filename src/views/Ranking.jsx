@@ -271,10 +271,10 @@ Persons.sort(function (a, b) {
               <CloseIcon />
             </IconButton>
             <Typography variant="Body1" className={classes.title}>
-              SR - BRASÍLIA SUL
+              SR2637 - BRASÍLIA SUL
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-               Dias Restantes:    <b> {diffDays}</b>
+               Dias Restantes :    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
               Atualizado em:    <b> {"19/11/2021"}</b>

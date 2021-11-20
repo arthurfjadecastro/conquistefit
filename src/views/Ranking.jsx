@@ -11,7 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
-import { Avatar, Grid } from "@material-ui/core";
+import { Avatar, Button, ButtonGroup, Grid } from "@material-ui/core";
 
 
 
@@ -289,8 +289,8 @@ Persons.sort(function (a, b) {
                 return (
                   <>
                     <ListItem >
-                      <Grid wrap={"nowrap"} container nowrap justifyContent={"space-between"} xs={12} lg={12} xl={12} md={12} sm={12}>
-                        <Grid item>
+                      <Grid wrap={"nowrap"} container nowrap justifyContent={"space-between"} alignContent={"center"} xs={12} lg={12} xl={12} md={12} sm={12}>
+                        <Grid xs={6} lg={6} md={6} item style={{display: "flex", alignItems: "center"}}>
                           <Grid container spacing={2} wrap={"nowrap"}>
                             <Grid item>
                               <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(50,90,173,.55)"}}>
@@ -303,6 +303,12 @@ Persons.sort(function (a, b) {
                           </Grid>
                         </Grid>
 
+                        <Grid item xs={3} lg={3} md={3} style={{width: 100, alignItems: "center", display:"flex"}}>
+                          <ButtonGroup disableElevation variant="contained">
+                            <Button>-</Button>
+                            <Button>+</Button>
+                          </ButtonGroup>
+                        </Grid>
                         {position === 1 &&
                         <Grid item>
                           <img style={{width: 60}} src={"/img/1colocado.svg"}/>

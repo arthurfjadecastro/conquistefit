@@ -21,14 +21,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,57,186,0.80)"
   },
   title: {
-    marginLeft: theme.spacing(2),
+    // marginLeft: theme.spacing(2),
+    fontWeight: 800,
     flex: 1,
   },
   title2: {
-    marginLeft: theme.spacing(2),
+    // marginLeft: theme.spacing(2),
     flex: 1,
-    justifyContent:"flex-end",
-    display: "flex"
+    // justifyContent:"flex-end",
+    // display: "flex"
   },
   dialog: {
     width: 1200
@@ -177,7 +178,7 @@ const Persons =  [
     pts: 0
   },
   {
-    name: "Jorge",
+    name: "Paula",
     src: "/img/default-avatar.png",
     pts: 0
   },
@@ -243,11 +244,14 @@ Persons.sort(function (a, b) {
             <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
               <CloseIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              SR2637 - BRASÍLIA SUL
+            <Typography variant="Body1" className={classes.title}>
+              SR - BRASÍLIA SUL
             </Typography>
-            <Typography variant="body2" className={classes.title2}>
+            <Typography variant="caption" className={classes.title2}>
                Dias Restantes:    <b> {diffDays}</b>
+            </Typography>
+            <Typography variant="caption" className={classes.title2}>
+              Atualizado em:    <b> {"19/11/2021"}</b>
             </Typography>
 
           </Toolbar>

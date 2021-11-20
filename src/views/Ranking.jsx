@@ -64,7 +64,7 @@ const Persons =  [
   {
     name: "Marciano",
     src: "/img/MARCIANO.svg",
-    pts: 3
+    pts: 4
   },
   {
     name: "Beth",
@@ -74,7 +74,7 @@ const Persons =  [
   {
     name: "Lana",
     src: "/img/LANA.svg",
-    pts: 3
+    pts: 4
   },
   {
     name: "Ramon",
@@ -84,17 +84,17 @@ const Persons =  [
   {
     name: "João",
     src: "/img/JOAO.svg",
-    pts: 3
+    pts: 4
   },
   {
     name: "Carol",
     src: "/img/CAROL.svg",
-    pts: 2
+    pts: 3
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
-    pts: 3
+    pts: 4
   },
   {
     name: "Arthur",
@@ -104,17 +104,17 @@ const Persons =  [
   {
     name: "Walmar",
     src: "/img/WALMAR.svg",
-    pts: 3
+    pts: 4
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
-    pts: 3
+    pts: 4
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
-    pts: 2
+    pts: 3
   },
   {
     name: "Kerson",
@@ -124,7 +124,7 @@ const Persons =  [
   {
     name: "Andréia",
     src: "/img/ANDREA.svg",
-    pts: 2
+    pts: 3
   },
   {
     name: "Luciano",
@@ -134,7 +134,7 @@ const Persons =  [
   {
     name: "Eduardo",
     src: "/img/default-avatar.png",
-    pts: 3
+    pts: 4
   },
   {
     name: "Juliana",
@@ -164,7 +164,7 @@ const Persons =  [
   {
     name: "Sandro",
     src: "/img/default-avatar.png",
-    pts: 0
+    pts: 1
   },
   {
     name: "Tassio",
@@ -184,7 +184,7 @@ const Persons =  [
   {
     name: "Rômulo",
     src: "/img/default-avatar.png",
-    pts: 2
+    pts: 3
   },
 ]
 

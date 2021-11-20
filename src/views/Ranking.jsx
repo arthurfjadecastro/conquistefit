@@ -21,14 +21,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,57,186,0.80)"
   },
   title: {
-    marginLeft: theme.spacing(2),
+    // marginLeft: theme.spacing(2),
+    fontWeight: 800,
     flex: 1,
   },
   title2: {
-    marginLeft: theme.spacing(2),
+    // marginLeft: theme.spacing(2),
     flex: 1,
-    justifyContent:"flex-end",
-    display: "flex"
+    // justifyContent:"flex-end",
+    // display: "flex"
   },
   dialog: {
     width: 1200
@@ -64,8 +65,8 @@ const Persons =  [
   {
     name: "Marciano",
     src: "/img/MARCIANO.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 4
   },
   {
     name: "Beth",
@@ -76,8 +77,8 @@ const Persons =  [
   {
     name: "Lana",
     src: "/img/LANA.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 4
   },
   {
     name: "Ramon",
@@ -89,44 +90,45 @@ const Persons =  [
   {
     name: "João",
     src: "/img/JOAO.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 4
   },
   {
     name: "Carol",
     src: "/img/CAROL.svg",
-    pts: 0,
-    position: null
+    position: null,
+    pts: 3
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 4
   },
   {
     name: "Arthur",
     src: "/img/ARTHUR.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 3
+
   },
   {
     name: "Walmar",
     src: "/img/WALMAR.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 4
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 4
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 3
   },
   {
     name: "Kerson",
@@ -137,8 +139,8 @@ const Persons =  [
   {
     name: "Andréia",
     src: "/img/ANDREA.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 3
   },
   {
     name: "Luciano",
@@ -149,14 +151,14 @@ const Persons =  [
   {
     name: "Eduardo",
     src: "/img/default-avatar.png",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 4
   },
   {
     name: "Juliana",
     src: "/img/default-avatar.png",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 3
   },
   {
     name: "Gilberto",
@@ -173,8 +175,9 @@ const Persons =  [
   {
     name: "Bruno",
     src: "/img/BRUNO.svg",
-    pts: 1,
-    position: null
+    position: null,
+    pts: 2
+
   },
   {
     name: "Marcelo",
@@ -185,8 +188,8 @@ const Persons =  [
   {
     name: "Sandro",
     src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
+    position: null,
+    pts: 1
   },
   {
     name: "Tassio",
@@ -201,16 +204,16 @@ const Persons =  [
     position: null
   },
   {
-    name: "Eduardo",
+    name: "Paula",
     src: "/img/default-avatar.png",
     pts: 0,
     position: null
   },
   {
-    name: "Jorge",
+    name: "Rômulo",
     src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
+    position: null,
+    pts: 3
   },
 ]
 
@@ -227,25 +230,54 @@ Persons.sort(function (a, b) {
 
 const totalPlayers = 25
 
-  Persons[0].position = 1
+  //Segue o líder.
+  // Persons[0].position = 1
+  let resultInterval = []
 
+  // Persons.map(({ name, src, pts, position }, index) => {
+  //       //Set a first place
+  //       if(Persons[0].pts === pts) {
+  //         Persons[index].position = 1
+  //       }else {
+  //         //Interval logic of points
+  //         resultInterval.push(Persons[index])
+  //       }
+  // })
 
-  Persons.map(({ name, src, pts, position }, index) => {
-        if(Persons[0].pts === pts) {
-          Persons[index].position = 1
-        }else{
+  // console.log(resultInterval)
 
-        }
+  // Persons.map(({ name, src, pts, position }, index) => {
+  //   var filtradoFirstPosition = Persons.filter(function(obj) { return obj.position == 1; });
+  //   console.log(filtradoFirstPosition)
+  // })
+
+  //Interval logic of points
+  // if(Persons[index].pts !== Persons[0].pts && Persons[index].pts !== 0 ) {
+  //   resultInterval.push(Persons[index])
+  // }
+  Persons.map(({name,src,pts,position},index) => {
+    resultInterval.push(Persons.filter(function(obj) { return obj.pts == Persons[index].pts }))
   })
 
-  Persons.map(({ name, src, pts, position }, index) => {
-    var filtrado = Persons.filter(function(obj) { return obj.position == 1; });
-    console.log(filtrado)
+  let values = resultInterval.filter(function (a) {
+    return !this[JSON.stringify(a)] && (this[JSON.stringify(a)] = true);
+  }, Object.create(null))
+
+  // console.log(values)
+
+
+  values.map((value,index) => {
+    value.map((v,i) => {
+      v.position = index+1
+    })
   })
 
+  // console.log(values)
 
 
 
+
+  // console.log(resultInterval)
 
   // const [initialState, setInitialState] = useState([])
 
@@ -289,61 +321,69 @@ const totalPlayers = 25
             <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
               <CloseIcon />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              SR2637 - BRASÍLIA SUL
+            <Typography variant="Body1" className={classes.title}>
+              SR - BRASÍLIA SUL
             </Typography>
-            <Typography variant="body2" className={classes.title2}>
+            <Typography variant="caption" className={classes.title2}>
                Dias Restantes:    <b> {diffDays}</b>
+            </Typography>
+            <Typography variant="caption" className={classes.title2}>
+              Atualizado em:    <b> {"19/11/2021"}</b>
             </Typography>
 
           </Toolbar>
         </AppBar>
         <List>
-          {Persons.map(({ name, src, pts, position }, index) => {
-            return (
-              <>
-                <ListItem >
-                  <Grid wrap={"nowrap"} container nowrap justifyContent={"space-between"} xs={12} lg={12} xl={12} md={12} sm={12}>
-                    <Grid item>
-                      <Grid container spacing={2} wrap={"nowrap"}>
+          {
+            values.map((value,index) => {
+              return value.map(({name,position, src, pts},i) => {
+                return (
+                  <>
+                    <ListItem >
+                      <Grid wrap={"nowrap"} container nowrap justifyContent={"space-between"} xs={12} lg={12} xl={12} md={12} sm={12}>
                         <Grid item>
-                          <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(50,90,173,.55)"}}>
-                            <img style={{width: 60, height: 52, boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>
-                          </Avatar>
+                          <Grid container spacing={2} wrap={"nowrap"}>
+                            <Grid item>
+                              <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(50,90,173,.55)"}}>
+                                <img style={{width: 60, height: 52, boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>
+                              </Avatar>
+                            </Grid>
+                            <Grid item>
+                              <ListItemText secondaryTypographyProps={{style: position === 0 || position === 1 || position === 2 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
+                            </Grid>
+                          </Grid>
                         </Grid>
+
+                        {position === 1 &&
                         <Grid item>
-                          <ListItemText secondaryTypographyProps={{style: index === 0 || index === 1 || index === 2 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
+                          <img style={{width: 60}} src={"/img/1colocado.svg"}/>
                         </Grid>
+                        }
+                        {position === 2 &&
+                        <Grid item>
+                          <img style={{width: 60}} src={"/img/2colocado.svg"}/>
+                        </Grid>
+                        }
+                        {position === 3 &&
+                        <Grid item>
+                          <img style={{width: 60}} src={"/img/3colocado.svg"}/>
+                        </Grid>
+                        }
+                        {position > 3 &&
+                        <Grid item className={classes.gridPosition}>
+                          <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
+                            {position+ "º"}
+                          </Typography>
+                        </Grid>
+                        }
                       </Grid>
-                    </Grid>
-                    {position === 1 &&
-                      <Grid item>
-                        <img style={{width: 60}} src={"/img/1colocado.svg"}/>
-                      </Grid>
-                    }
-                    {/*{index === 1 &&*/}
-                    {/*<Grid item>*/}
-                    {/*  <img style={{width: 60}} src={"/img/2colocado.svg"}/>*/}
-                    {/*</Grid>*/}
-                    {/*}*/}
-                    {/*{index === 2 &&*/}
-                    {/*<Grid item>*/}
-                    {/*  <img style={{width: 60}} src={"/img/3colocado.svg"}/>*/}
-                    {/*</Grid>*/}
-                    {/*}*/}
-                    {/*{index >= 3 &&*/}
-                    {/*<Grid item className={classes.gridPosition}>*/}
-                    {/*  <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >*/}
-                    {/*    {index+1 + "º"}*/}
-                    {/*  </Typography>*/}
-                    {/*</Grid>*/}
-                    {/*}*/}
-                  </Grid>
-                </ListItem>
-                <Divider />
-              </>
-            );
-          })}
+                    </ListItem>
+                    <Divider />
+                  </>
+                )
+              })
+            })
+          }
         </List>
       </Dialog>
     </div>

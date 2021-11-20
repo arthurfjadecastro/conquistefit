@@ -85,7 +85,6 @@ const Persons =  [
     src: "/img/RAMON.svg",
     pts: 1,
     position: null
-
   },
   {
     name: "João",
@@ -228,33 +227,10 @@ Persons.sort(function (a, b) {
   return 0;
 });
 
-const totalPlayers = 25
 
-  //Segue o líder.
-  // Persons[0].position = 1
   let resultInterval = []
 
-  // Persons.map(({ name, src, pts, position }, index) => {
-  //       //Set a first place
-  //       if(Persons[0].pts === pts) {
-  //         Persons[index].position = 1
-  //       }else {
-  //         //Interval logic of points
-  //         resultInterval.push(Persons[index])
-  //       }
-  // })
 
-  // console.log(resultInterval)
-
-  // Persons.map(({ name, src, pts, position }, index) => {
-  //   var filtradoFirstPosition = Persons.filter(function(obj) { return obj.position == 1; });
-  //   console.log(filtradoFirstPosition)
-  // })
-
-  //Interval logic of points
-  // if(Persons[index].pts !== Persons[0].pts && Persons[index].pts !== 0 ) {
-  //   resultInterval.push(Persons[index])
-  // }
   Persons.map(({name,src,pts,position},index) => {
     resultInterval.push(Persons.filter(function(obj) { return obj.pts == Persons[index].pts }))
   })
@@ -263,7 +239,6 @@ const totalPlayers = 25
     return !this[JSON.stringify(a)] && (this[JSON.stringify(a)] = true);
   }, Object.create(null))
 
-  // console.log(values)
 
 
   values.map((value,index) => {
@@ -272,32 +247,6 @@ const totalPlayers = 25
     })
   })
 
-  // console.log(values)
-
-
-
-
-  // console.log(resultInterval)
-
-  // const [initialState, setInitialState] = useState([])
-
-
-
-  //
-  // useEffect(() => {
-  //     fetch("/persons").then(res => {
-  //         if (res.ok) {
-  //             return res.json()
-  //         }
-  //     }).then(jsonResponse => setInitialState(jsonResponse))
-  // }, [])
-  //
-  //
-  // initialState.forEach(e => {
-  //     delete e.id
-  //     delete e.createdAt
-  //     delete e.updatedAt
-  // })
 
 
   const finish = new Date("01/14/2022");

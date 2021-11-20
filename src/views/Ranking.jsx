@@ -298,7 +298,7 @@ Persons.sort(function (a, b) {
                               </Avatar>
                             </Grid>
                             <Grid item>
-                              <ListItemText secondaryTypographyProps={{style: position === 0 || position === 1 || position === 2 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
+                              <ListItemText secondaryTypographyProps={{style: position === 1 || position === 2 || position === 3 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
                             </Grid>
                           </Grid>
                         </Grid>

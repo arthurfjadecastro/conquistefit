@@ -59,195 +59,20 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function Ranking({open, handleClose}) {
 
-
-
-const Persons =  [
-  {
-    name: "Marciano",
-    src: "/img/MARCIANO.svg",
-    position: null,
-    pts: 6
-  },
-  {
-    name: "Beth",
-    src: "/img/BETH.svg",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Lana",
-    src: "/img/LANA.svg",
-    position: null,
-    pts: 6
-  },
-  {
-    name: "Ramon",
-    src: "/img/RAMON.svg",
-    pts: 1,
-    position: null
-  },
-  {
-    name: "João",
-    src: "/img/JOAO.svg",
-    position: null,
-    pts: 6
-  },
-  {
-    name: "Carol",
-    src: "/img/CAROL.svg",
-    position: null,
-    pts: 5
-  },
-  {
-    name: "Dayana",
-    src: "/img/DAYANA.svg",
-    position: null,
-    pts: 6
-  },
-  {
-    name: "Arthur",
-    src: "/img/ARTHUR.svg",
-    position: null,
-    pts: 5
-
-  },
-  {
-    name: "Walmar",
-    src: "/img/WALMAR.svg",
-    position: null,
-    pts: 6
-  },
-  {
-    name: "Rafaela",
-    src: "/img/RAFAELA.svg",
-    position: null,
-    pts: 4
-  },
-  {
-    name: "Fernanda",
-    src: "/img/FERNANDA.svg",
-    position: null,
-    pts: 5
-  },
-  {
-    name: "Kerson",
-    src: "/img/KERSON.svg",
-    pts: 2,
-    position: null
-  },
-  {
-    name: "Andréia",
-    src: "/img/ANDREA.svg",
-    position: null,
-    pts: 5
-  },
-  {
-    name: "Luciano",
-    src: "/img/LUCIANO.svg",
-    pts: 2,
-    position: null
-  },
-  {
-    name: "Eduardo",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 6
-  },
-  {
-    name: "Juliana",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 3
-  },
-  {
-    name: "Gilberto",
-    src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Elvis",
-    src: "/img/ELVIS.svg",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Bruno",
-    src: "/img/BRUNO.svg",
-    position: null,
-    pts: 2
-
-  },
-  {
-    name: "Marcelo",
-    src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Sandro",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 1
-  },
-  {
-    name: "Tassio",
-    src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Guilherme",
-    src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Paula",
-    src: "/img/default-avatar.png",
-    pts: 2,
-    position: null
-  },
-  {
-    name: "Rômulo",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 3
-  },
-]
-
-Persons.sort(function (a, b) {
-  if (a.pts < b.pts) {
-    return 1;
+  let positionController = {
+    points:0,
+    position:0
   }
-  if (a.pts > b.pts) {
-    return -1;
-  }
-  // a must be equal to b
-  return 0;
-});
 
+  const [initialState, setInitialState] = useState([])
 
-  let resultInterval = []
-
-
-  Persons.map(({name,src,pts,position},index) => {
-    resultInterval.push(Persons.filter(function(obj) { return obj.pts == Persons[index].pts }))
-  })
-
-  let values = resultInterval.filter(function (a) {
-    return !this[JSON.stringify(a)] && (this[JSON.stringify(a)] = true);
-  }, Object.create(null))
-
-
-
-  values.map((value,index) => {
-    value.map((v,i) => {
-      v.position = index+1
-    })
-  })
-
-
+  useEffect(() => {
+    fetch("https://conquiste-fit.herokuapp.com/persons").then(res => {
+        if (res.ok) {
+          return res.json()
+        }
+    }).then(jsonResponse => setInitialState(jsonResponse))
+}, [])
 
   const finish = new Date("01/14/2022");
   const timeDiff = Math.abs(finish.getTime() - Date.now());
@@ -284,8 +109,13 @@ Persons.sort(function (a, b) {
         </AppBar>
         <List>
           {
-            values.map((value,index) => {
-              return value.map(({name,position, src, pts},i) => {
+            initialState.map(({ name, src, points }) => {
+              
+              if (positionController.points !== points) {
+                positionController.position++
+                positionController.points = points
+              }
+
                 return (
                   <>
                     <ListItem >
@@ -298,30 +128,30 @@ Persons.sort(function (a, b) {
                               </Avatar>
                             </Grid>
                             <Grid item>
-                              <ListItemText secondaryTypographyProps={{style: position === 1 || position === 2 || position === 3 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
+                              <ListItemText secondaryTypographyProps={{style: positionController.position === 1 || positionController.position === 2 || positionController.position === 3 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={points + "points"} />
                             </Grid>
                           </Grid>
                         </Grid>
 
-                        {position === 1 &&
+                        {positionController.position === 1 &&
                         <Grid item>
                           <img style={{width: 60}} src={"/img/1colocado.svg"}/>
                         </Grid>
                         }
-                        {position === 2 &&
+                        {positionController.position === 2 &&
                         <Grid item>
                           <img style={{width: 60}} src={"/img/2colocado.svg"}/>
                         </Grid>
                         }
-                        {position === 3 &&
+                        {positionController.position === 3 &&
                         <Grid item>
                           <img style={{width: 60}} src={"/img/3colocado.svg"}/>
                         </Grid>
                         }
-                        {position > 3 &&
+                        {positionController.position > 3 &&
                         <Grid item className={classes.gridPosition}>
                           <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
-                            {position+ "º"}
+                            {positionController.position+ "º"}
                           </Typography>
                         </Grid>
                         }

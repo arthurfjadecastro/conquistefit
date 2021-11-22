@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 6
+    pts: 8
   },
   {
     name: "Beth",
@@ -78,7 +78,7 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 6
+    pts: 8
   },
   {
     name: "Ramon",
@@ -90,19 +90,19 @@ const Persons =  [
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 6
+    pts: 8
   },
   {
     name: "Carol",
     src: "/img/CAROL.svg",
     position: null,
-    pts: 5
+    pts: 7
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
     position: null,
-    pts: 6
+    pts: 8
   },
   {
     name: "Arthur",
@@ -115,31 +115,31 @@ const Persons =  [
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 6
+    pts: 8
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
     position: null,
-    pts: 4
+    pts: 6
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
     position: null,
-    pts: 5
+    pts: 7
   },
   {
     name: "Kerson",
     src: "/img/KERSON.svg",
-    pts: 2,
+    pts: 4,
     position: null
   },
   {
     name: "Andréia",
     src: "/img/ANDREA.svg",
     position: null,
-    pts: 5
+    pts: 7
   },
   {
     name: "Luciano",
@@ -151,13 +151,13 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 6
+    pts: 8
   },
   {
     name: "Juliana",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 3
+    pts: 5
   },
   {
     name: "Gilberto",
@@ -188,7 +188,7 @@ const Persons =  [
     name: "Sandro",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 1
+    pts: 3
   },
   {
     name: "Tassio",
@@ -212,7 +212,7 @@ const Persons =  [
     name: "Rômulo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 3
+    pts: 5
   },
 ]
 
@@ -277,9 +277,8 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"20/11/2021"}</b>
+              Atualizado em:    <b> {"21/11/2021"}</b>
             </Typography>
-
           </Toolbar>
         </AppBar>
         <List>

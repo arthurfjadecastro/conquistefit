@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Beth",
@@ -78,31 +78,31 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Ramon",
     src: "/img/RAMON.svg",
-    pts: 1,
+    pts: 2,
     position: null
   },
   {
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Carol",
     src: "/img/CAROL.svg",
     position: null,
-    pts: 7
+    pts: 8
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Arthur",
@@ -115,19 +115,19 @@ const Persons =  [
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
     position: null,
-    pts: 6
+    pts: 7
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
     position: null,
-    pts: 7
+    pts: 8
   },
   {
     name: "Kerson",
@@ -139,7 +139,7 @@ const Persons =  [
     name: "Andréia",
     src: "/img/ANDREA.svg",
     position: null,
-    pts: 7
+    pts: 8
   },
   {
     name: "Luciano",
@@ -151,13 +151,13 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Juliana",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 5
+    pts: 6
   },
   {
     name: "Gilberto",
@@ -175,7 +175,7 @@ const Persons =  [
     name: "Bruno",
     src: "/img/BRUNO.svg",
     position: null,
-    pts: 2
+    pts: 3
 
   },
   {
@@ -193,7 +193,7 @@ const Persons =  [
   {
     name: "Tassio",
     src: "/img/default-avatar.png",
-    pts: 0,
+    pts: 1,
     position: null
   },
   {
@@ -212,7 +212,7 @@ const Persons =  [
     name: "Rômulo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 5
+    pts: 6
   },
 ]
 

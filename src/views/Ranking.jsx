@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 9
+    pts: 10
   },
   {
     name: "Beth",
@@ -78,68 +78,68 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 9
+    pts: 10
   },
   {
     name: "Ramon",
     src: "/img/RAMON.svg",
-    pts: 2,
+    pts: 3,
     position: null
   },
   {
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 9
+    pts: 10
   },
   {
     name: "Carol",
     src: "/img/CAROL.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Dayana",
     src: "/img/DAYANA.svg",
     position: null,
-    pts: 9
+    pts: 10
   },
   {
     name: "Arthur",
     src: "/img/ARTHUR.svg",
     position: null,
-    pts: 5
+    pts: 6
 
   },
   {
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 9
+    pts: 10
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
     position: null,
-    pts: 7
+    pts: 8
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Kerson",
     src: "/img/KERSON.svg",
-    pts: 4,
+    pts: 5,
     position: null
   },
   {
     name: "Andréia",
     src: "/img/ANDREA.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Luciano",
@@ -151,13 +151,13 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 9
+    pts: 10
   },
   {
     name: "Juliana",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 6
+    pts: 7
   },
   {
     name: "Gilberto",
@@ -175,7 +175,7 @@ const Persons =  [
     name: "Bruno",
     src: "/img/BRUNO.svg",
     position: null,
-    pts: 3
+    pts: 4
 
   },
   {
@@ -193,7 +193,7 @@ const Persons =  [
   {
     name: "Tassio",
     src: "/img/default-avatar.png",
-    pts: 1,
+    pts: 2,
     position: null
   },
   {
@@ -212,7 +212,7 @@ const Persons =  [
     name: "Rômulo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 6
+    pts: 7
   },
 ]
 
@@ -277,7 +277,7 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"22/11/2021"}</b>
+              Atualizado em:    <b> {"23/11/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

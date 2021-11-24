@@ -277,7 +277,7 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"21/11/2021"}</b>
+              Atualizado em:    <b> {"22/11/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

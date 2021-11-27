@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 12
+    pts: 13
   },
   {
     name: "Beth",
@@ -78,7 +78,7 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 12
+    pts: 13
   },
   {
     name: "Ramon",
@@ -90,7 +90,7 @@ const Persons =  [
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 12
+    pts: 13
   },
   {
     name: "Carol",
@@ -115,13 +115,13 @@ const Persons =  [
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 12
+    pts: 13
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
     position: null,
-    pts: 8
+    pts: 9
   },
   {
     name: "Fernanda",
@@ -151,7 +151,7 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 12
+    pts: 13
   },
   {
     name: "Juliana",
@@ -205,7 +205,7 @@ const Persons =  [
   {
     name: "Paula",
     src: "/img/default-avatar.png",
-    pts: 2,
+    pts: 3,
     position: null
   },
   {
@@ -277,7 +277,7 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"25/11/2021"}</b>
+              Atualizado em:    <b> {"26/11/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 11
+    pts: 12
   },
   {
     name: "Beth",
@@ -78,7 +78,7 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 11
+    pts: 12
   },
   {
     name: "Ramon",
@@ -90,7 +90,7 @@ const Persons =  [
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 11
+    pts: 12
   },
   {
     name: "Carol",
@@ -102,20 +102,20 @@ const Persons =  [
     name: "Dayana",
     src: "/img/DAYANA.svg",
     position: null,
-    pts: 11
+    pts: 12
   },
   {
     name: "Arthur",
     src: "/img/ARTHUR.svg",
     position: null,
-    pts: 7
+    pts: 8
 
   },
   {
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 11
+    pts: 12
   },
   {
     name: "Rafaela",
@@ -127,7 +127,7 @@ const Persons =  [
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
     position: null,
-    pts: 10
+    pts: 11
   },
   {
     name: "Kerson",
@@ -139,7 +139,7 @@ const Persons =  [
     name: "Andréia",
     src: "/img/ANDREA.svg",
     position: null,
-    pts: 9
+    pts: 10
   },
   {
     name: "Luciano",
@@ -151,7 +151,7 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 11
+    pts: 12
   },
   {
     name: "Juliana",
@@ -175,7 +175,7 @@ const Persons =  [
     name: "Bruno",
     src: "/img/BRUNO.svg",
     position: null,
-    pts: 5
+    pts: 6
 
   },
   {
@@ -212,7 +212,7 @@ const Persons =  [
     name: "Rômulo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 8
+    pts: 9
   },
 ]
 
@@ -277,7 +277,7 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"24/11/2021"}</b>
+              Atualizado em:    <b> {"25/11/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

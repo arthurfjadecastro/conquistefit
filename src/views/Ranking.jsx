@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 13
+    pts: 15
   },
   {
     name: "Beth",
@@ -78,19 +78,19 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 13
+    pts: 15
   },
   {
     name: "Ramon",
     src: "/img/RAMON.svg",
-    pts: 3,
+    pts: 5,
     position: null
   },
   {
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 13
+    pts: 15
   },
   {
     name: "Carol",
@@ -102,7 +102,7 @@ const Persons =  [
     name: "Dayana",
     src: "/img/DAYANA.svg",
     position: null,
-    pts: 12
+    pts: 14
   },
   {
     name: "Arthur",
@@ -115,19 +115,19 @@ const Persons =  [
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 13
+    pts: 15
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
     position: null,
-    pts: 9
+    pts: 11
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
     position: null,
-    pts: 11
+    pts: 13
   },
   {
     name: "Kerson",
@@ -139,7 +139,7 @@ const Persons =  [
     name: "Andréia",
     src: "/img/ANDREA.svg",
     position: null,
-    pts: 10
+    pts: 12
   },
   {
     name: "Luciano",
@@ -151,13 +151,13 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 13
+    pts: 15
   },
   {
     name: "Juliana",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 8
+    pts: 10
   },
   {
     name: "Gilberto",
@@ -205,7 +205,7 @@ const Persons =  [
   {
     name: "Paula",
     src: "/img/default-avatar.png",
-    pts: 3,
+    pts: 5,
     position: null
   },
   {
@@ -277,7 +277,7 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"26/11/2021"}</b>
+              Atualizado em:    <b> {"27/11/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

@@ -59,11 +59,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function Ranking({open, handleClose}) {
 
-  let positionController = {
-    points:0,
-    position:0
-  }
-
   const [initialState, setInitialState] = useState([])
 
   useEffect(() => {
@@ -109,13 +104,8 @@ export default function Ranking({open, handleClose}) {
         </AppBar>
         <List>
           {
-            initialState.map(({ name, src, points }) => {
+            initialState.map(({ name, src, points, position }) => {
               
-              if (positionController.points !== points) {
-                positionController.position++
-                positionController.points = points
-              }
-
                 return (
                   <>
                     <ListItem >
@@ -128,30 +118,30 @@ export default function Ranking({open, handleClose}) {
                               </Avatar>
                             </Grid>
                             <Grid item>
-                              <ListItemText secondaryTypographyProps={{style: positionController.position === 1 || positionController.position === 2 || positionController.position === 3 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={points + "points"} />
+                              <ListItemText secondaryTypographyProps={{style: position === 1 || position === 2 || position === 3 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={points + "points"} />
                             </Grid>
                           </Grid>
                         </Grid>
 
-                        {positionController.position === 1 &&
+                        {position === 1 &&
                         <Grid item>
                           <img style={{width: 60}} src={"/img/1colocado.svg"}/>
                         </Grid>
                         }
-                        {positionController.position === 2 &&
+                        {position === 2 &&
                         <Grid item>
                           <img style={{width: 60}} src={"/img/2colocado.svg"}/>
                         </Grid>
                         }
-                        {positionController.position === 3 &&
+                        {position === 3 &&
                         <Grid item>
                           <img style={{width: 60}} src={"/img/3colocado.svg"}/>
                         </Grid>
                         }
-                        {positionController.position > 3 &&
+                        {position > 3 &&
                         <Grid item className={classes.gridPosition}>
                           <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
-                            {positionController.position+ "º"}
+                            {position+ "º"}
                           </Typography>
                         </Grid>
                         }

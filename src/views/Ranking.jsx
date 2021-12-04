@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 22
+    pts: 23
   },
   {
     name: "Beth",
@@ -78,7 +78,7 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 21
+    pts: 22
   },
   {
     name: "Ramon",
@@ -90,7 +90,7 @@ const Persons =  [
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 22
+    pts: 23
   },
   {
     name: "Carol",
@@ -108,26 +108,26 @@ const Persons =  [
     name: "Arthur",
     src: "/img/ARTHUR.svg",
     position: null,
-    pts: 11
+    pts: 12
 
   },
   {
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 22
+    pts: 23
   },
   {
     name: "Rafaela",
     src: "/img/RAFAELA.svg",
     position: null,
-    pts: 16
+    pts: 17
   },
   {
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
     position: null,
-    pts: 19
+    pts: 20
   },
   {
     name: "Kerson",
@@ -139,7 +139,7 @@ const Persons =  [
     name: "Andréia",
     src: "/img/ANDREA.svg",
     position: null,
-    pts: 18
+    pts: 19
   },
   {
     name: "Luciano",
@@ -151,7 +151,7 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 22
+    pts: 23
   },
   {
     name: "Juliana",
@@ -212,7 +212,7 @@ const Persons =  [
     name: "Rômulo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 14
+    pts: 15
   },
 ]
 
@@ -277,7 +277,7 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"02/12/2021"}</b>
+              Atualizado em:    <b> {"03/12/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

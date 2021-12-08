@@ -66,7 +66,7 @@ const Persons =  [
     name: "Marciano",
     src: "/img/MARCIANO.svg",
     position: null,
-    pts: 28
+    pts: 29
   },
   {
     name: "Beth",
@@ -78,7 +78,7 @@ const Persons =  [
     name: "Lana",
     src: "/img/LANA.svg",
     position: null,
-    pts: 27
+    pts: 28
   },
   {
     name: "Ramon",
@@ -90,7 +90,7 @@ const Persons =  [
     name: "João",
     src: "/img/JOAO.svg",
     position: null,
-    pts: 28
+    pts: 29
   },
   {
     name: "Carol",
@@ -102,7 +102,7 @@ const Persons =  [
     name: "Dayana",
     src: "/img/DAYANA.svg",
     position: null,
-    pts: 24
+    pts: 25
   },
   {
     name: "Arthur",
@@ -115,7 +115,7 @@ const Persons =  [
     name: "Walmar",
     src: "/img/WALMAR.svg",
     position: null,
-    pts: 28
+    pts: 29
   },
   {
     name: "Rafaela",
@@ -127,7 +127,7 @@ const Persons =  [
     name: "Fernanda",
     src: "/img/FERNANDA.svg",
     position: null,
-    pts: 23
+    pts: 24
   },
   {
     name: "Kerson",
@@ -139,7 +139,7 @@ const Persons =  [
     name: "Andréia",
     src: "/img/ANDREA.svg",
     position: null,
-    pts: 22
+    pts: 23
   },
   {
     name: "Luciano",
@@ -151,7 +151,7 @@ const Persons =  [
     name: "Eduardo",
     src: "/img/default-avatar.png",
     position: null,
-    pts: 28
+    pts: 29
   },
   {
     name: "Juliana",
@@ -175,7 +175,7 @@ const Persons =  [
     name: "Bruno",
     src: "/img/BRUNO.svg",
     position: null,
-    pts: 7
+    pts: 8
 
   },
   {
@@ -205,7 +205,7 @@ const Persons =  [
   {
     name: "Paula",
     src: "/img/default-avatar.png",
-    pts: 7,
+    pts: 8,
     position: null
   },
   {
@@ -277,7 +277,7 @@ Persons.sort(function (a, b) {
                Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"06/12/2021"}</b>
+              Atualizado em:    <b> {"07/12/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

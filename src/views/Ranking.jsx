@@ -1,4 +1,4 @@
-import React,{ useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -57,182 +57,182 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function Ranking({open, handleClose}) {
+export default function Ranking({ open, handleClose }) {
 
 
 
-const Persons =  [
-  {
-    name: "Marciano",
-    src: "/img/MARCIANO.svg",
-    position: null,
-    pts: 36
-  },
-  {
-    name: "Beth",
-    src: "/img/BETH.svg",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Lana",
-    src: "/img/LANA.svg",
-    position: null,
-    pts: 35
-  },
-  {
-    name: "Ramon",
-    src: "/img/RAMON.svg",
-    pts: 6,
-    position: null
-  },
-  {
-    name: "João",
-    src: "/img/JOAO.svg",
-    position: null,
-    pts: 36
-  },
-  {
-    name: "Carol",
-    src: "/img/CAROL.svg",
-    position: null,
-    pts: 12
-  },
-  {
-    name: "Dayana",
-    src: "/img/DAYANA.svg",
-    position: null,
-    pts: 28
-  },
-  {
-    name: "Arthur",
-    src: "/img/ARTHUR.svg",
-    position: null,
-    pts: 12
+  const Persons = [
+    {
+      name: "Marciano",
+      src: "/img/MARCIANO.svg",
+      position: null,
+      pts: 37
+    },
+    {
+      name: "Beth",
+      src: "/img/BETH.svg",
+      pts: 0,
+      position: null
+    },
+    {
+      name: "Lana",
+      src: "/img/LANA.svg",
+      position: null,
+      pts: 36
+    },
+    {
+      name: "Ramon",
+      src: "/img/RAMON.svg",
+      pts: 6,
+      position: null
+    },
+    {
+      name: "João",
+      src: "/img/JOAO.svg",
+      position: null,
+      pts: 37
+    },
+    {
+      name: "Carol",
+      src: "/img/CAROL.svg",
+      position: null,
+      pts: 12
+    },
+    {
+      name: "Dayana",
+      src: "/img/DAYANA.svg",
+      position: null,
+      pts: 29
+    },
+    {
+      name: "Arthur",
+      src: "/img/ARTHUR.svg",
+      position: null,
+      pts: 12
 
-  },
-  {
-    name: "Walmar",
-    src: "/img/WALMAR.svg",
-    position: null,
-    pts: 36
-  },
-  {
-    name: "Rafaela",
-    src: "/img/RAFAELA.svg",
-    position: null,
-    pts: 24
-  },
-  {
-    name: "Fernanda",
-    src: "/img/FERNANDA.svg",
-    position: null,
-    pts: 26
-  },
-  {
-    name: "Kerson",
-    src: "/img/KERSON.svg",
-    pts: 5,
-    position: null
-  },
-  {
-    name: "Andréia",
-    src: "/img/ANDREA.svg",
-    position: null,
-    pts: 24
-  },
-  {
-    name: "Luciano",
-    src: "/img/LUCIANO.svg",
-    pts: 2,
-    position: null
-  },
-  {
-    name: "Eduardo",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 36
-  },
-  {
-    name: "Juliana",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 15
-  },
-  {
-    name: "Gilberto",
-    src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Elvis",
-    src: "/img/ELVIS.svg",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Bruno",
-    src: "/img/BRUNO.svg",
-    position: null,
-    pts: 8
+    },
+    {
+      name: "Walmar",
+      src: "/img/WALMAR.svg",
+      position: null,
+      pts: 37
+    },
+    {
+      name: "Rafaela",
+      src: "/img/RAFAELA.svg",
+      position: null,
+      pts: 25
+    },
+    {
+      name: "Fernanda",
+      src: "/img/FERNANDA.svg",
+      position: null,
+      pts: 26
+    },
+    {
+      name: "Kerson",
+      src: "/img/KERSON.svg",
+      pts: 5,
+      position: null
+    },
+    {
+      name: "Andréia",
+      src: "/img/ANDREA.svg",
+      position: null,
+      pts: 24
+    },
+    {
+      name: "Luciano",
+      src: "/img/LUCIANO.svg",
+      pts: 2,
+      position: null
+    },
+    {
+      name: "Eduardo",
+      src: "/img/default-avatar.png",
+      position: null,
+      pts: 37
+    },
+    {
+      name: "Juliana",
+      src: "/img/default-avatar.png",
+      position: null,
+      pts: 15
+    },
+    {
+      name: "Gilberto",
+      src: "/img/default-avatar.png",
+      pts: 0,
+      position: null
+    },
+    {
+      name: "Elvis",
+      src: "/img/ELVIS.svg",
+      pts: 0,
+      position: null
+    },
+    {
+      name: "Bruno",
+      src: "/img/BRUNO.svg",
+      position: null,
+      pts: 9
 
-  },
-  {
-    name: "Marcelo",
-    src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Sandro",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 3
-  },
-  {
-    name: "Tassio",
-    src: "/img/default-avatar.png",
-    pts: 2,
-    position: null
-  },
-  {
-    name: "Guilherme",
-    src: "/img/default-avatar.png",
-    pts: 0,
-    position: null
-  },
-  {
-    name: "Paula",
-    src: "/img/default-avatar.png",
-    pts: 10,
-    position: null
-  },
-  {
-    name: "Rômulo",
-    src: "/img/default-avatar.png",
-    position: null,
-    pts: 21
-  },
-]
+    },
+    {
+      name: "Marcelo",
+      src: "/img/default-avatar.png",
+      pts: 0,
+      position: null
+    },
+    {
+      name: "Sandro",
+      src: "/img/default-avatar.png",
+      position: null,
+      pts: 3
+    },
+    {
+      name: "Tassio",
+      src: "/img/default-avatar.png",
+      pts: 2,
+      position: null
+    },
+    {
+      name: "Guilherme",
+      src: "/img/default-avatar.png",
+      pts: 0,
+      position: null
+    },
+    {
+      name: "Paula",
+      src: "/img/default-avatar.png",
+      pts: 10,
+      position: null
+    },
+    {
+      name: "Rômulo",
+      src: "/img/default-avatar.png",
+      position: null,
+      pts: 21
+    },
+  ]
 
-Persons.sort(function (a, b) {
-  if (a.pts < b.pts) {
-    return 1;
-  }
-  if (a.pts > b.pts) {
-    return -1;
-  }
-  // a must be equal to b
-  return 0;
-});
+  Persons.sort(function (a, b) {
+    if (a.pts < b.pts) {
+      return 1;
+    }
+    if (a.pts > b.pts) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
 
 
   let resultInterval = []
 
 
-  Persons.map(({name,src,pts,position},index) => {
-    resultInterval.push(Persons.filter(function(obj) { return obj.pts == Persons[index].pts }))
+  Persons.map(({ name, src, pts, position }, index) => {
+    resultInterval.push(Persons.filter(function (obj) { return obj.pts == Persons[index].pts }))
   })
 
   let values = resultInterval.filter(function (a) {
@@ -241,9 +241,9 @@ Persons.sort(function (a, b) {
 
 
 
-  values.map((value,index) => {
-    value.map((v,i) => {
-      v.position = index+1
+  values.map((value, index) => {
+    value.map((v, i) => {
+      v.position = index + 1
     })
   })
 
@@ -259,12 +259,12 @@ Persons.sort(function (a, b) {
   return (
 
     <div>
-      <Dialog  fullWidth PaperProps={{
+      <Dialog fullWidth PaperProps={{
         style: {
           maxWidth: "md",
         },
         variant: "elevation"
-      }}  open={open} onClose={handleClose} TransitionComponent={Transition}>
+      }} open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
           <Toolbar>
             <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
@@ -274,17 +274,17 @@ Persons.sort(function (a, b) {
               SR - BRASÍLIA SUL
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-               Dias Restantes:    <b> {diffDays}</b>
+              Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"12/12/2021"}</b>
+              Atualizado em:    <b> {"13/12/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>
         <List>
           {
-            values.map((value,index) => {
-              return value.map(({name,position, src, pts},i) => {
+            values.map((value, index) => {
+              return value.map(({ name, position, src, pts }, i) => {
                 return (
                   <>
                     <ListItem >
@@ -292,37 +292,37 @@ Persons.sort(function (a, b) {
                         <Grid item>
                           <Grid container spacing={2} wrap={"nowrap"}>
                             <Grid item>
-                              <Avatar   style={{width:  60, height: 60, padding: 4, backgroundColor: "rgba(50,90,173,.55)"}}>
-                                <img style={{width: 60, height: 52, boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%"}} src={src}/>
+                              <Avatar style={{ width: 60, height: 60, padding: 4, backgroundColor: "rgba(50,90,173,.55)" }}>
+                                <img style={{ width: 60, height: 52, boxShadow: "0px -3px 16px 2px rgb(0 0 0 / 62%)", borderRadius: "50%" }} src={src} />
                               </Avatar>
                             </Grid>
                             <Grid item>
-                              <ListItemText secondaryTypographyProps={{style: position === 1 || position === 2 || position === 3 ? {fontWeight: "800"}:{fontWeight: "400"}}} primaryTypographyProps={{noWrap: true, style: {fontWeight: "800"}}} primary={name} secondary={pts + "pts"} />
+                              <ListItemText secondaryTypographyProps={{ style: position === 1 || position === 2 || position === 3 ? { fontWeight: "800" } : { fontWeight: "400" } }} primaryTypographyProps={{ noWrap: true, style: { fontWeight: "800" } }} primary={name} secondary={pts + "pts"} />
                             </Grid>
                           </Grid>
                         </Grid>
 
                         {position === 1 &&
-                        <Grid item>
-                          <img style={{width: 60}} src={"/img/1colocado.svg"}/>
-                        </Grid>
+                          <Grid item>
+                            <img style={{ width: 60 }} src={"/img/1colocado.svg"} />
+                          </Grid>
                         }
                         {position === 2 &&
-                        <Grid item>
-                          <img style={{width: 60}} src={"/img/2colocado.svg"}/>
-                        </Grid>
+                          <Grid item>
+                            <img style={{ width: 60 }} src={"/img/2colocado.svg"} />
+                          </Grid>
                         }
                         {position === 3 &&
-                        <Grid item>
-                          <img style={{width: 60}} src={"/img/3colocado.svg"}/>
-                        </Grid>
+                          <Grid item>
+                            <img style={{ width: 60 }} src={"/img/3colocado.svg"} />
+                          </Grid>
                         }
                         {position > 3 &&
-                        <Grid item className={classes.gridPosition}>
-                          <Typography style={{borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily:"fantasy"}}  >
-                            {position+ "º"}
-                          </Typography>
-                        </Grid>
+                          <Grid item className={classes.gridPosition}>
+                            <Typography style={{ borderRadius: "16%", borderBottom: "solid", color: "rgba(155,155,155,0.85)", fontFamily: "fantasy" }}  >
+                              {position + "º"}
+                            </Typography>
+                          </Grid>
                         }
                       </Grid>
                     </ListItem>

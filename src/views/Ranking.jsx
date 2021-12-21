@@ -167,7 +167,7 @@ export default function Ranking({ open, handleClose }) {
     },
     {
       name: "Elvis",
-      src: "/img/ELVIS.svg",
+      src: "/img/default-avatar.png",
       pts: 0,
       position: null
     },

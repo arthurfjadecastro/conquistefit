@@ -66,7 +66,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Marciano",
       src: "/img/MARCIANO.svg",
       position: null,
-      pts: 45
+      pts: 46
     },
     {
       name: "Beth",
@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 41
+      pts: 42
     },
     {
       name: "Ramon",
@@ -90,7 +90,7 @@ export default function Ranking({ open, handleClose }) {
       name: "João",
       src: "/img/JOAO.svg",
       position: null,
-      pts: 46
+      pts: 47
     },
     {
       name: "Carol",
@@ -102,7 +102,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 34
+      pts: 35
     },
     {
       name: "Arthur",
@@ -115,19 +115,19 @@ export default function Ranking({ open, handleClose }) {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 46
+      pts: 47
     },
     {
       name: "Rafaela",
       src: "/img/RAFAELA.svg",
       position: null,
-      pts: 33
+      pts: 34
     },
     {
       name: "Fernanda",
       src: "/img/FERNANDA.svg",
       position: null,
-      pts: 31
+      pts: 32
     },
     {
       name: "Kerson",
@@ -151,7 +151,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Eduardo",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 46
+      pts: 47
     },
     {
       name: "Juliana",
@@ -212,7 +212,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Rômulo",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 25
+      pts: 26
     },
   ]
 
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"20/12/2021"}</b>
+              Atualizado em:    <b> {"21/12/2021"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

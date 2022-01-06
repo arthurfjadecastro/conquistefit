@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 57
+      pts: 58
     },
     {
       name: "Ramon",
@@ -90,7 +90,7 @@ export default function Ranking({ open, handleClose }) {
       name: "João",
       src: "/img/JOAO.svg",
       position: null,
-      pts: 61
+      pts: 62
     },
     {
       name: "Carol",
@@ -102,7 +102,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 41
+      pts: 42
     },
     {
       name: "Arthur",
@@ -121,7 +121,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Rafaela",
       src: "/img/RAFAELA.svg",
       position: null,
-      pts: 48
+      pts: 49
     },
     {
       name: "Fernanda",
@@ -157,7 +157,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Juliana",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 17
+      pts: 18
     },
     {
       name: "Gilberto",
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"04/01/2022"}</b>
+              Atualizado em:    <b> {"05/01/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

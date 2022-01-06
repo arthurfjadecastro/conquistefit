@@ -66,7 +66,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Marciano",
       src: "/img/MARCIANO.svg",
       position: null,
-      pts: 59
+      pts: 60
     },
     {
       name: "Beth",
@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 55
+      pts: 56
     },
     {
       name: "Ramon",
@@ -90,7 +90,7 @@ export default function Ranking({ open, handleClose }) {
       name: "João",
       src: "/img/JOAO.svg",
       position: null,
-      pts: 59
+      pts: 60
     },
     {
       name: "Carol",
@@ -102,7 +102,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 39
+      pts: 40
     },
     {
       name: "Arthur",
@@ -115,19 +115,19 @@ export default function Ranking({ open, handleClose }) {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 63
+      pts: 64
     },
     {
       name: "Rafaela",
       src: "/img/RAFAELA.svg",
       position: null,
-      pts: 47
+      pts: 48
     },
     {
       name: "Fernanda",
       src: "/img/FERNANDA.svg",
       position: null,
-      pts: 38
+      pts: 39
     },
     {
       name: "Kerson",
@@ -149,15 +149,15 @@ export default function Ranking({ open, handleClose }) {
     },
     {
       name: "Eduardo",
-      src: "/img/default-avatar.png",
+      src: "/img/Eduardo.svg",
       position: null,
-      pts: 63
+      pts: 64
     },
     {
       name: "Juliana",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 16
+      pts: 17
     },
     {
       name: "Gilberto",
@@ -212,7 +212,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Rômulo",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 31
+      pts: 32
     },
   ]
 
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"02/01/2022"}</b>
+              Atualizado em:    <b> {"03/01/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

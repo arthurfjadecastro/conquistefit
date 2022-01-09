@@ -66,7 +66,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Marciano",
       src: "/img/MARCIANO.svg",
       position: null,
-      pts: 61
+      pts: 62
     },
     {
       name: "Beth",
@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 58
+      pts: 59
     },
     {
       name: "Ramon",
@@ -102,7 +102,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 42
+      pts: 43
     },
     {
       name: "Arthur",
@@ -115,19 +115,19 @@ export default function Ranking({ open, handleClose }) {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 64
+      pts: 65
     },
     {
       name: "Rafaela",
       src: "/img/RAFAELA.svg",
       position: null,
-      pts: 49
+      pts: 50
     },
     {
       name: "Fernanda",
       src: "/img/FERNANDA.svg",
       position: null,
-      pts: 40
+      pts: 41
     },
     {
       name: "Kerson",
@@ -157,7 +157,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Juliana",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 18
+      pts: 19
     },
     {
       name: "Gilberto",
@@ -212,7 +212,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Rômulo",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 33
+      pts: 35
     },
   ]
 
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"05/01/2022"}</b>
+              Atualizado em:    <b> {"06/01/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

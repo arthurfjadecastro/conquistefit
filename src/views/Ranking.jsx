@@ -66,7 +66,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Marciano",
       src: "/img/MARCIANO.svg",
       position: null,
-      pts: 63
+      pts: 64
     },
     {
       name: "Beth",
@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 64
+      pts: 65
     },
     {
       name: "Ramon",
@@ -90,7 +90,7 @@ export default function Ranking({ open, handleClose }) {
       name: "João",
       src: "/img/JOAO.svg",
       position: null,
-      pts: 66
+      pts: 67
     },
     {
       name: "Carol",
@@ -102,7 +102,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 47
+      pts: 48
     },
     {
       name: "Arthur",
@@ -115,19 +115,19 @@ export default function Ranking({ open, handleClose }) {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 69
+      pts: 70
     },
     {
       name: "Rafaela",
       src: "/img/RAFAELA.svg",
       position: null,
-      pts: 55
+      pts: 56
     },
     {
       name: "Fernanda",
       src: "/img/FERNANDA.svg",
       position: null,
-      pts: 46
+      pts: 47
     },
     {
       name: "Kerson",
@@ -151,13 +151,13 @@ export default function Ranking({ open, handleClose }) {
       name: "Eduardo",
       src: "/img/Eduardo.svg",
       position: null,
-      pts: 70
+      pts: 71
     },
     {
       name: "Juliana",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 24
+      pts: 25
     },
     {
       name: "Gilberto",
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"09/01/2022"}</b>
+              Atualizado em:    <b> {"10/01/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

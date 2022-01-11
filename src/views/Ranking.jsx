@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 60
+      pts: 62
     },
     {
       name: "Ramon",
@@ -90,7 +90,7 @@ export default function Ranking({ open, handleClose }) {
       name: "João",
       src: "/img/JOAO.svg",
       position: null,
-      pts: 62
+      pts: 64
     },
     {
       name: "Carol",
@@ -102,32 +102,32 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 43
+      pts: 45
     },
     {
       name: "Arthur",
       src: "/img/ARTHUR.svg",
       position: null,
-      pts: 13
+      pts: 15
 
     },
     {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 65
+      pts: 67
     },
     {
       name: "Rafaela",
       src: "/img/RAFAELA.svg",
       position: null,
-      pts: 51
+      pts: 53
     },
     {
       name: "Fernanda",
       src: "/img/FERNANDA.svg",
       position: null,
-      pts: 42
+      pts: 44
     },
     {
       name: "Kerson",
@@ -151,13 +151,13 @@ export default function Ranking({ open, handleClose }) {
       name: "Eduardo",
       src: "/img/Eduardo.svg",
       position: null,
-      pts: 66
+      pts: 68
     },
     {
       name: "Juliana",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 20
+      pts: 22
     },
     {
       name: "Gilberto",
@@ -205,7 +205,7 @@ export default function Ranking({ open, handleClose }) {
     {
       name: "Paula",
       src: "/img/default-avatar.png",
-      pts: 13,
+      pts: 15,
       position: null
     },
     {
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"07/01/2022"}</b>
+              Atualizado em:    <b> {"08/01/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

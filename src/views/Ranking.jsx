@@ -66,7 +66,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Marciano",
       src: "/img/MARCIANO.svg",
       position: null,
-      pts: 64
+      pts: 65
     },
     {
       name: "Beth",
@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 66
+      pts: 67
     },
     {
       name: "Ramon",
@@ -90,7 +90,7 @@ export default function Ranking({ open, handleClose }) {
       name: "João",
       src: "/img/JOAO.svg",
       position: null,
-      pts: 68
+      pts: 69
     },
     {
       name: "Carol",
@@ -102,20 +102,20 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 48
+      pts: 49
     },
     {
       name: "Arthur",
       src: "/img/ARTHUR.svg",
       position: null,
-      pts: 15
+      pts: 16
 
     },
     {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 70
+      pts: 71
     },
     {
       name: "Rafaela",
@@ -151,13 +151,13 @@ export default function Ranking({ open, handleClose }) {
       name: "Eduardo",
       src: "/img/Eduardo.svg",
       position: null,
-      pts: 73
+      pts: 74
     },
     {
       name: "Juliana",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 27
+      pts: 28
     },
     {
       name: "Gilberto",
@@ -212,7 +212,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Rômulo",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 35
+      pts: 36
     },
   ]
 
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"12/01/2022"}</b>
+              Atualizado em:    <b> {"13/01/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

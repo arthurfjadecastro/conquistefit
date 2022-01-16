@@ -66,7 +66,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Marciano",
       src: "/img/MARCIANO.svg",
       position: null,
-      pts: 65
+      pts: 66
     },
     {
       name: "Beth",
@@ -78,7 +78,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
-      pts: 67
+      pts: 68
     },
     {
       name: "Ramon",
@@ -90,7 +90,7 @@ export default function Ranking({ open, handleClose }) {
       name: "João",
       src: "/img/JOAO.svg",
       position: null,
-      pts: 69
+      pts: 70
     },
     {
       name: "Carol",
@@ -102,7 +102,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 49
+      pts: 50
     },
     {
       name: "Arthur",
@@ -115,7 +115,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 71
+      pts: 72
     },
     {
       name: "Rafaela",
@@ -127,7 +127,7 @@ export default function Ranking({ open, handleClose }) {
       name: "Fernanda",
       src: "/img/FERNANDA.svg",
       position: null,
-      pts: 49
+      pts: 50
     },
     {
       name: "Kerson",
@@ -151,13 +151,13 @@ export default function Ranking({ open, handleClose }) {
       name: "Eduardo",
       src: "/img/Eduardo.svg",
       position: null,
-      pts: 74
+      pts: 75
     },
     {
       name: "Juliana",
       src: "/img/default-avatar.png",
       position: null,
-      pts: 28
+      pts: 29
     },
     {
       name: "Gilberto",
@@ -277,7 +277,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {diffDays}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"13/01/2022"}</b>
+              Atualizado em:    <b> {"14/01/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>

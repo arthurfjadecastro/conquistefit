@@ -274,7 +274,7 @@ export default function Ranking({ open, handleClose }) {
               SR - BRASÍLIA SUL
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Dias Restantes:    <b> {diffDays}</b>
+              Dias Restantes:    <b> {0}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
               Atualizado em:    <b> {"14/01/2022"}</b>

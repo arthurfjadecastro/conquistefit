@@ -62,158 +62,158 @@ export default function Ranking({ open, handleClose }) {
 
 
   const Persons = [
-    {
-      name: "Marciano",
-      src: "/img/MARCIANO.svg",
-      position: null,
-      pts: 66
-    },
-    {
-      name: "Beth",
-      src: "/img/BETH.svg",
-      pts: 0,
-      position: null
-    },
+    // {
+    //   name: "Marciano",
+    //   src: "/img/MARCIANO.svg",
+    //   position: null,
+    //   pts: 66
+    // },
+    // {
+    //   name: "Beth",
+    //   src: "/img/BETH.svg",
+    //   pts: 0,
+    //   position: null
+    // },
     {
       name: "Lana",
       src: "/img/LANA.svg",
       position: null,
       pts: 68
     },
-    {
-      name: "Ramon",
-      src: "/img/RAMON.svg",
-      pts: 6,
-      position: null
-    },
-    {
-      name: "João",
-      src: "/img/JOAO.svg",
-      position: null,
-      pts: 70
-    },
-    {
-      name: "Carol",
-      src: "/img/CAROL.svg",
-      position: null,
-      pts: 12
-    },
+    // {
+    //   name: "Ramon",
+    //   src: "/img/RAMON.svg",
+    //   pts: 6,
+    //   position: null
+    // },
+    // {
+    //   name: "João",
+    //   src: "/img/JOAO.svg",
+    //   position: null,
+    //   pts: 70
+    // },
+    // {
+    //   name: "Carol",
+    //   src: "/img/CAROL.svg",
+    //   position: null,
+    //   pts: 12
+    // },
     {
       name: "Dayana",
       src: "/img/DAYANA.svg",
       position: null,
-      pts: 50
+      pts: 50.7
     },
-    {
-      name: "Arthur",
-      src: "/img/ARTHUR.svg",
-      position: null,
-      pts: 16
+    // {
+    //   name: "Arthur",
+    //   src: "/img/ARTHUR.svg",
+    //   position: null,
+    //   pts: 16
 
-    },
+    // },
     {
       name: "Walmar",
       src: "/img/WALMAR.svg",
       position: null,
-      pts: 72
+      pts: 72.5
     },
     {
       name: "Rafaela",
       src: "/img/RAFAELA.svg",
       position: null,
-      pts: 57
+      pts: 59.2
     },
-    {
-      name: "Fernanda",
-      src: "/img/FERNANDA.svg",
-      position: null,
-      pts: 50
-    },
-    {
-      name: "Kerson",
-      src: "/img/KERSON.svg",
-      pts: 5,
-      position: null
-    },
-    {
-      name: "Andréia",
-      src: "/img/ANDREA.svg",
-      position: null,
-      pts: 29
-    },
-    {
-      name: "Luciano",
-      src: "/img/LUCIANO.svg",
-      pts: 2,
-      position: null
-    },
+    // {
+    //   name: "Fernanda",
+    //   src: "/img/FERNANDA.svg",
+    //   position: null,
+    //   pts: 50
+    // },
+    // {
+    //   name: "Kerson",
+    //   src: "/img/KERSON.svg",
+    //   pts: 5,
+    //   position: null
+    // },
+    // {
+    //   name: "Andréia",
+    //   src: "/img/ANDREA.svg",
+    //   position: null,
+    //   pts: 29
+    // },
+    // {
+    //   name: "Luciano",
+    //   src: "/img/LUCIANO.svg",
+    //   pts: 2,
+    //   position: null
+    // },
     {
       name: "Eduardo",
       src: "/img/Eduardo.svg",
       position: null,
       pts: 75
     },
-    {
-      name: "Juliana",
-      src: "/img/default-avatar.png",
-      position: null,
-      pts: 29
-    },
-    {
-      name: "Gilberto",
-      src: "/img/default-avatar.png",
-      pts: 0,
-      position: null
-    },
-    {
-      name: "Elvis",
-      src: "/img/default-avatar.png",
-      pts: 0,
-      position: null
-    },
-    {
-      name: "Bruno",
-      src: "/img/BRUNO.svg",
-      position: null,
-      pts: 9
+    // {
+    //   name: "Juliana",
+    //   src: "/img/default-avatar.png",
+    //   position: null,
+    //   pts: 29
+    // },
+    // {
+    //   name: "Gilberto",
+    //   src: "/img/default-avatar.png",
+    //   pts: 0,
+    //   position: null
+    // },
+    // {
+    //   name: "Elvis",
+    //   src: "/img/default-avatar.png",
+    //   pts: 0,
+    //   position: null
+    // },
+    // {
+    //   name: "Bruno",
+    //   src: "/img/BRUNO.svg",
+    //   position: null,
+    //   pts: 9
 
-    },
-    {
-      name: "Marcelo",
-      src: "/img/default-avatar.png",
-      pts: 0,
-      position: null
-    },
-    {
-      name: "Sandro",
-      src: "/img/default-avatar.png",
-      position: null,
-      pts: 3
-    },
-    {
-      name: "Tassio",
-      src: "/img/default-avatar.png",
-      pts: 2,
-      position: null
-    },
-    {
-      name: "Guilherme",
-      src: "/img/default-avatar.png",
-      pts: 0,
-      position: null
-    },
-    {
-      name: "Paula",
-      src: "/img/default-avatar.png",
-      pts: 15,
-      position: null
-    },
-    {
-      name: "Rômulo",
-      src: "/img/default-avatar.png",
-      position: null,
-      pts: 36
-    },
+    // },
+    // {
+    //   name: "Marcelo",
+    //   src: "/img/default-avatar.png",
+    //   pts: 0,
+    //   position: null
+    // },
+    // {
+    //   name: "Sandro",
+    //   src: "/img/default-avatar.png",
+    //   position: null,
+    //   pts: 3
+    // },
+    // {
+    //   name: "Tassio",
+    //   src: "/img/default-avatar.png",
+    //   pts: 2,
+    //   position: null
+    // },
+    // {
+    //   name: "Guilherme",
+    //   src: "/img/default-avatar.png",
+    //   pts: 0,
+    //   position: null
+    // },
+    // {
+    //   name: "Paula",
+    //   src: "/img/default-avatar.png",
+    //   pts: 15,
+    //   position: null
+    // },
+    // {
+    //   name: "Rômulo",
+    //   src: "/img/default-avatar.png",
+    //   position: null,
+    //   pts: 36
+    // },
   ]
 
   Persons.sort(function (a, b) {
@@ -249,6 +249,8 @@ export default function Ranking({ open, handleClose }) {
 
 
 
+
+
   const finish = new Date("01/14/2022");
   const timeDiff = Math.abs(finish.getTime() - Date.now());
 
@@ -277,7 +279,7 @@ export default function Ranking({ open, handleClose }) {
               Dias Restantes:    <b> {"-"}</b>
             </Typography>
             <Typography variant="caption" className={classes.title2}>
-              Atualizado em:    <b> {"14/01/2022"}</b>
+              Atualizado em:    <b> {"17/02/2022"}</b>
             </Typography>
           </Toolbar>
         </AppBar>
